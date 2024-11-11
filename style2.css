@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+.container-home a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #cd774e;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0 20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px #00000066;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container-home a:hover {
+    transform: translateY(-20%) scale(1.1);
+}
+ 
+.wrapper-makanan, .wrapper-minuman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container-makanan > h1,.container-minuman > h1 {
+    text-align: center;
+    font-family: "Imperial Script", cursive;
+}
+
+.menu {
+    width: 300px;
+    height: 650px;
+    box-shadow: 2px 2px 2px #0000006d;
+    border: 1px solid #0000006d;
+    border-radius: 10px;
+    overflow-y: scroll;
+    cursor: pointer;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.content-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu img:hover {
+    filter: blur(1px);
+}
+
+.menu h1 {
+    text-align: center;
+    font-family: "Imperial Script", cursive;
+    margin: -3px 0;
+}
+
+.container-minuman {
+    margin-top: 90px;
+}
+
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90px;
+    color: #fff;
+    padding-top: 20px;
+    margin-top: 70px;
+    font-family: helvetica;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-footer {
+    display: flex;
+    gap: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}

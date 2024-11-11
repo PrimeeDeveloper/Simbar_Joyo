@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    background-color: #ededed;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-image: url('asset/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 60px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.scroll {
+    background-color: #0000006b;
+    backdrop-filter: blur(3px);
+}
+
+
+.nick {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Imperial Script", cursive;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: 0.4s;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.title {
+    position: absolute;
+    left: 60px;
+}
+
+.title h1 {
+    font-size: 40px;
+}
+
+/* main */
+.content-1 {
+    margin: 80px;
+}
+
+.content-1 img {
+    width: 20%;
+    display: flex;
+    margin: 30px auto;
+}
+
+.content-1 p {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.content-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 0 20px;
+}
+
+.card {
+    width: 12rem;
+    height: 25rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #0000007a;
+    box-shadow: 2px 2px 2px #0000007a;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card video {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.content-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #cd774e;
+    width: 10%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #00000066;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.content-menu a:hover {
+    transform: translateY(-15%);
+}
+
+.content-3 {
+    margin: 90px 0;
+}
+
+.content-3 h1 {
+    text-align: center;
+}
+
+.content-3 iframe {
+    width: 600px;
+    height: 450px; 
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+}
+
+/* footer */
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-footer {
+    display: flex;
+    gap: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+#navbar a.active {
+    color: #cd774e;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Aturan umum untuk perangkat seluler */
+@media only screen and (max-width: 480px) {
+    .menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #0000006b;
+        text-align: center;
+        width: 50%;
+        padding: 20px 0;
+        border-radius: 0 0 0 15px;
+    }
+
+    .menu.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: block; 
+    }
+
+    .content-1 img {
+        width: 60%;
+    }
+
+    .content-1 p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .content-2 {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 10rem;
+        height: 22rem;
+    }
+
+    .card video {
+        width: 100%;
+    }
+    
+    .content-menu a {
+        width: 30%;
+    }
+
+    .content-3 iframe {
+        width: 400px;
+        height: 450px; 
+    }
+}
